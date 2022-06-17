@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Template Fingerprint</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  
+</head>
+
+<body>
+  <h1>Template</h1>
+  <textarea name="template" id="template">{{ data }}</textarea>
+  <br />
+  <hr />
+  <br />
+  <select name="engine", id="engine">
+    <option value="liquidjs">liquidjs</option>
+    <option value="ejs">ejs</option>
+    <option value="mustache">mustache</option>
+    <option value="pug">pug</option>
+    <option value="handlebars">handlebars</option>
+  </select>
+  <button id="renderbtn">Render</button>
+  <br />
+  <h1>Rendered Text</h1>
+  <br />
+  <textarea disabled name="render" id="render"></textarea>
+</body>
+
+<footer>
+  <script src="/javascripts/main.js"></script>
+</footer>
+
+</html>
